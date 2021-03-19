@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Servicio de Computadoras 
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Numero Serie*</label><label class="validation-error hide" id="NumeroSerieValidationError">Es requerido llena.</label>
+                        <input type="text" name="NumeroSerie" id="NumeroSerie">
+                    </div>
+                    <div>
+                        <label>Descripcion del Producto</label>
+                        <input type="text" name="Descripcion" id="Descripcion">
+                    </div>
+                    <div>
+                        <label>Procesador</label>
+                        <input type="text" name="procesador" id="procesador">
+                    </div>
+                    <div>
+                        <label>Memoria</label>
+                        <input type="text" name="memoria" id="memoria">
+                    </div>
+                    <div>
+                        <label>Disco Duro</label>
+                        <input type="text" name="discoduro" id="discoduro">
+                    </div>
+                    <div>
+                        <label>Sistema Operativo</label>
+                        <input type="text" name="sistemaop" id="sistemaop">
+                    </div>
+                    <div>
+                        <label>Puertos</label>
+                        <input type="text" name="puertos" id="puertos">
+                    </div>
+                    <div>
+                        <label>Conectividad</label>
+                        <input type="text" name="conectividad" id="conectividad">
+                    </div>
+                    <div>
+                        <label>Camara</label>
+                        <input type="text" name="camara" id="camara">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit" placeholder="Enviar" name="Enviar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Numero Serie</th>
+                            <th>Descripcion del producto</th>
+                            <th>Procesador</th>
+                            <th>Memoria</th>
+                            <th>Disco Duro</th>
+                            <th>Sistema Operativo</th>
+                            <th>Puertos</th>
+                            <th>Conectividad</th>
+                            <th>Camara</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
